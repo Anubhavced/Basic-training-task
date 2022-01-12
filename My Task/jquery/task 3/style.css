@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Open Sans";
+    font-size: 14px;
+    background-color: cornsilk;
+  }
+    
+ .Main{
+    
+    width: 35%;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    background-color: beige;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 2px 3px ;
+  }
+  form label {
+    display: inline-block;
+   letter-spacing: 1px;
+   line-height: 10px; 
+  }
+  div H2{
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: 3px;
+  }
+  div form {
+    width: 50%;
+    margin: auto;
+    padding: 30px 30px;
+  }
+  div form input{
+    height: 20px;
+    width: 100%;  
+  }
+  
+  form div {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .error {
+    color: red;
+    margin-left: 5px;
+  }
+  
+  label.error {
+    display: inline;
+  }
+  span{
+    color: red;
+  }

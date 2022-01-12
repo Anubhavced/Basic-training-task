@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;;
+}
+body{
+    background-color: darkcyan;
+}
+ul{
+    text-align:center;
+    line-height: 30px;
+}
+ul li{
+    letter-spacing: 2px;
+}
+div {
+    text-align: center;
+}
+div input{
+    padding: 10px;
+    margin: 20px 0;
+}
+div button{
+    padding: 10px;
+    background-color: azure;
+    color: brown;
+    border: 2px solid brown;
+}
+div button:hover{
+    background-color: brown;
+    color: cornsilk;
+    border-radius: 15px;
+    border: 2px solid cornsilk;
+}

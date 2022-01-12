@@ -1,0 +1,15 @@
+
+#productSection{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+#productSection div{
+    width: 28%;
+    padding: 10px;margin: 10px;
+
+}
+h2,h4{
+    /* font-size: 20px; */
+    line-height: 2px;
+}

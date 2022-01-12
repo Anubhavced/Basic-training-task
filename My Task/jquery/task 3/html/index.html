@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <div class="Main">
+        <h2>Registration Form</h2>
+        <form id="first_form" method="post" action="/action_page.php"   onsubmit="return validateForm()" >
+            <div>
+              <label>First Name:</label>
+              <input type="text" id="first_name" name="first_name"></input><span id="one"></span>
+            </div>
+            <div>
+              <label>Last Name:</label>
+              <input type="text" id="last_name" name="last_name"></input><span id="two"></span>
+            </div>
+            <div>
+              <label>Email:</label><br>
+              <input type="text" id="email" name="email"></input><span id="three"></span>
+            </div>
+            <div>
+              <label >Password:</label>
+              <input type="password" id="password" name="password"></input><span id="fourth"></span>
+            </div>
+            <div>
+                <label >Confirm Password:</label>
+                <input type="password" id="cpassword" name="cpassword"></input><span id="fifth"></span>
+              </div>
+            <div>
+              <input type="submit" value="Submit" />
+            </div>
+          </form>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>

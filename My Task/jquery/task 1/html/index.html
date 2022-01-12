@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../style.css">
+   
+</head>
+<body>
+
+    <h1></h1>
+    <ul id="list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li >JAVASCRIPT</li>
+        <li>JQUERY</li>
+        <li>JAVA</li>
+        <li>PHP</li>
+        <li>PYTHON</li>
+    </ul>
+
+    <div>
+    <input type="text" name="task" id="input" placeholder="Enter your favourite language">
+    <br><button>Add Item</button></div>
+    <script>
+     $("input").on("keypress", function(e) {
+    if (e.which === 32 && !this.value.length)
+        e.preventDefault();
+});
+
+        $(document).ready(function(e){
+   $('button').click(function() {
+    var mylist = $('#input').val().trim();
+    // var space =[/\s/g];
+    if(mylist == "" ){
+        alert('empty'); 
+    }
+  
+    else{
+    var newLang = $('<li>'+mylist+'</li>').on('click', function(){
+        $(this).remove();
+    });}
+    $('#list').append(newLang);
+    $('input[type=text], textarea').val('');
+     return false;
+ });
+});
+// $(".reset").bind("click", function() {
+//   $("input[type=text], textarea").val("");
+// });
+$("ul li").on('click', function() {
+        $(this).remove();
+        });
+        
+</script>
+</body>
+</html>

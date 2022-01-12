@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#main{
+   margin: 3% 10%;
+}
+#main div{
+    width :31%;
+    float: left;
+    margin: 1%;
+    border: 1px solid black;
+}
+img{
+    width: 250px;
+    height: 200px;
+    object-fit: contain;
+}.btn{
+    border-radius: 5px;
+    font-size: 25px;
+}
+.btn:hover{
+    background-color: rgb(92, 92, 167);
+    color: white;
+}
+.btn:active{
+    background-color: rgba(97, 183, 245, 0.6);
+  }
+  .active {
+    background: rgba(52, 152, 219,0.6); 
+  }
+  .filter{
+
+      position: fixed;
+      bottom: 5%;
+      right: 1%;
+  }
+  #myBtnContainer{
+     
+    margin: 25px;
+    display: flex;
+    justify-content: space-evenly;
+   
+  }
+  #myBtnContainer button{
+      padding: 10px 15px ;
+  }
+  h1{
+      text-align: center;
+      line-height: 50px;
+  }
